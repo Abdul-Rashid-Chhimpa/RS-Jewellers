@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "Product_Name":"Diamond Nackless",
+        "Product_Img":"./public/OIP (1).webp",
+        "Qoute":"A diamond is a reminder that under pressure, beauty is born.”"
+    },
+      {
+        "id":2,
+        "Product_Name":"Gold Ring",
+        "Product_Img":"./public/gold ring.webp",
+        "Qoute":"With this ring, I promise you my heart."
+    },
+      {
+        "id":3,
+        "Product_Name":"Silver Ring",
+        "Product_Img":"./public/ring.webp",
+        "Qoute":"“Sparkle every day with your favourite jewels.”"
+    },  {
+        "id":4,
+        "Product_Name":"Gold Nackless",
+        "Product_Img":"./public/gold nackless.webp",
+        "Qoute":"You're not fully dressed untill you sparkle."
+    },  {
+        "id":5,
+        "Product_Name":"Gold Earing",
+        "Product_Img":"./public/earing 1.webp",
+        "Qoute":"When its dark, look for stars."
+    }
+]
+    

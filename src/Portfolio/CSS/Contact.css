@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    /* border: 0.1px solid black; */
+    min-height: 100vh; /* Changed from height: 100vh for better mobile behavior */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+form .form-img {
+    /* border: 0.1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .form-img img {
+    width: 500px;
+    height: 570px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+form .form-data {
+    /* border: 0.1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+
+form .form-data span {
+    padding: 5px;
+    border-bottom: 1.5px solid slateblue;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+form .form-data input {
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 400px;
+    background: transparent;
+    outline: none;
+    border: 0.1px solid rgba(0, 0, 0, 0.197);
+    border-radius: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form .form-data input::placeholder {
+    text-align: start;
+    color: slateblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+form .form-data textarea {
+    padding: 12px 20px;
+    width: 80%;
+    max-width: 400px;
+    min-height: 120px;
+    resize: vertical;
+    border: 0.1px solid rgba(0, 0, 0, 0.197);
+    border-radius: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: transparent;
+}
+
+form .form-data textarea::placeholder {
+    color: slateblue;
+    font-weight: 500;
+}
+
+form .form-data button {
+    padding: 12px 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 1px 0.9px 3px 2px rgba(0, 0, 0, 0.159);
+    border-radius: 50px;
+    background-color: rgba(105, 90, 205, 0.46);
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+form .form-data button:hover {
+    background-color: slateblue;
+    transition: 0.3s linear;
+}
+
+/* Media Queries */
+
+/* Large tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    form {
+        gap: 20px;
+        padding: 30px;
+    }
+
+    form .form-img img {
+        width: 400px;
+        height: 480px;
+    }
+
+    form .form-data input,
+    form .form-data textarea {
+        width: 90%;
+    }
+}
+
+/* Tablets and small laptops (max-width: 768px) */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    form .form-img {
+        order: -1; /* Image appears above form on mobile */
+        margin-bottom: 20px;
+    }
+
+    form .form-img img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    form .form-data span {
+        font-size: 1.4rem;
+    }
+
+    form .form-data input,
+    form .form-data textarea {
+        width: 95%;
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    form {
+        padding: 30px 15px;
+    }
+
+    form .form-data {
+        gap: 20px;
+    }
+
+    form .form-data span {
+        font-size: 1.3rem;
+    }
+
+    form .form-data input,
+    form .form-data textarea {
+        padding: 12px 15px;
+        width: 100%;
+    }
+
+    form .form-data button {
+        padding: 12px 30px;
+        width: 80%;
+        font-size: 0.95rem;
+    }
+}

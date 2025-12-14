@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containor {
+    max-width: 1400px;
+    margin: 80px auto 120px;        /* good spacing from header & footer */
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Quote / Text Side */
+.product-qoute {
+    flex: 1 1 400px;
+    min-height: 380px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+    background-image: url("bg 7.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* White overlay so text is always readable */
+.product-qoute::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.product-qoute > * {
+    position: relative;
+    z-index: 2;
+}
+
+.product-qoute span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: slateblue;
+    line-height: 1.3;
+}
+
+.product-qoute p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.product-qoute button {
+    align-self: center;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: rgba(112, 128, 144, 0.18);
+    color: #333;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-qoute button:hover {
+    background-color: slateblue;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(106, 90, 205, 0.3);
+}
+
+/* Image Side */
+.product-img {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-img img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 16px; */
+    /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.042); */
+    transition: transform 0.4s ease;
+    mix-blend-mode: multiply;
+}
+
+.product-img img:hover {
+    transform: scale(1.03);
+}
+
+.product-img span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    color: slateblue;
+    padding-bottom: 4px;
+    border-bottom: 2px solid slateblue;
+}
+
+/* Fixed Footer – always visible at bottom */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 20px;
+    background: linear-gradient(120deg, rgba(203, 159, 117, 0.45), rgba(206, 210, 214, 0.45));
+    backdrop-filter: blur(20px);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+}
+
+footer span {
+    color: #e74c3c;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+footer span p {
+    display: inline;
+    color: slateblue;
+    font-family: cursive;
+    margin-left: 4px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+@media screen and (max-width: 920px) {
+    .containor {
+        margin: 60px auto 100px;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .product-qoute {
+        min-height: 340px;
+        padding: 40px 30px;
+    }
+
+    .product-qoute span {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .containor {
+        margin: 40px auto 90px;
+        padding: 15px;
+    }
+
+    .product-qoute {
+        padding: 35px 20px;
+        min-height: 300px;
+    }
+
+    .product-qoute span {
+        font-size: 1.5rem;
+    }
+
+    .product-qoute p {
+        font-size: 1rem;
+    }
+
+    .product-qoute button {
+        padding: 10px 28px;
+        font-size: 1rem;
+    }
+
+    footer span {
+        font-size: 0.9rem;
+    }
+}

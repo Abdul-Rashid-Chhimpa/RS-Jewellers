@@ -1,0 +1,198 @@
+[
+  {
+    "id":1,
+    "img":"earing 1.webp",
+    "gm":"4gm",
+    "name":"Gold Earing",
+    "price":"12500/-"
+  },
+  {
+    "id":2,
+    "img":"earing 2.webp",
+    "gm":"3gm",
+    "name":"Gold Earing",
+    "price":"15500/-"
+  },
+  {
+    "id":3,
+    "img":"earing 3.webp",
+    "gm":"6gm",
+    "name":"Gold Earing",
+    "price":"22500/-"
+  },
+  {
+    "id":4,
+    "img":"earing 4.webp",
+    "gm":"4.5gm",
+    "name":"Gold Earing",
+    "price":"32500/-"
+  },
+  {
+    "id":5,
+    "img":"earing 5.webp",
+    "gm":"8gm",
+    "name":"Gold Earing",
+    "price":"72500/-"
+  },
+  {
+    "id":6,
+    "img":"earing 6.webp",
+    "gm":"3.2gm",
+    "name":"Gold Earing",
+    "price":"47500/-"
+  },
+  {
+    "id":7,
+    "img":"gold minakri 1.webp",
+    "gm":"4gm",
+    "name":"Gold Ring",
+    "price":"92500/-"
+  },
+  {
+    "id":8,
+    "img":"minakari 2.webp",
+    "gm":"3gm",
+    "name":"Gold Ring",
+    "price":"72500/-"
+  },
+    {
+    "id":9,
+    "img":"minakri 3.webp",
+    "gm":"4gm",
+    "name":"Gold Ring",
+    "price":"82500/-"
+  },
+    {
+    "id":10,
+    "img":"minakri 4.webp",
+    "gm":"3.5gm",
+    "name":"Gold Ring",
+    "price":"72500/-"
+  },
+    {
+    "id":11,
+    "img":"minakri 5.webp",
+    "gm":"5gm",
+    "name":"Gold Ring",
+    "price":"70500/-"
+  },
+    {
+    "id":12,
+    "img":"minakari 6.webp",
+    "gm":"2.5gm",
+    "name":"Gold Ring",
+    "price":"52500/-"
+  },
+  {
+    "id":13,
+    "img":"pandle 1.webp",
+    "gm":"4gm",
+    "name":"Gold Pandel",
+    "price":"30000/-"
+  },
+   {
+    "id":14,
+    "img":"pandle 2.webp",
+    "gm":"7gm",
+    "name":"Gold Pandel",
+    "price":"60000/-"
+  },
+   {
+    "id":15,
+    "img":"pandle 3.webp",
+    "gm":"9gm",
+    "name":"Gold Pandel",
+    "price":"80000/-"
+  },
+  {
+    "id":16,
+    "img":"payel 1.webp",
+    "gm":"9gm",
+    "name":"Silver Payel",
+    "price":"80000/-"
+  },
+  {
+    "id":17,
+    "img":"payel 2.webp",
+    "gm":"9gm",
+    "name":"Silver Payel",
+    "price":"80000/-"
+  },
+  {
+    "id":18,
+    "img":"payel 3.webp",
+    "gm":"9gm",
+    "name":"Silver Payel",
+    "price":"80000/-"
+  },
+  {
+    "id":19,
+    "img":"payel 4.webp",
+    "gm":"9gm",
+    "name":"Silver Payel",
+    "price":"80000/-"
+  },
+  {
+    "id":20,
+    "img":"payel 5.webp",
+    "gm":"9gm",
+    "name":"Silver Payel",
+    "price":"80000/-"
+  },
+  {
+    "id":21,
+    "img":"payel 6.webp",
+    "gm":"9gm",
+    "name":"Silver Payel",
+    "price":"80000/-"
+  },
+  {
+    "id":22,
+    "img":"payel 2.webp",
+    "gm":"9gm",
+    "name":"Silver Payel",
+    "price":"80000/-"
+  },
+  {
+    "id":23,
+    "img":"bangle 1.webp",
+    "gm":"9gm",
+    "name":"Silver Bangle",
+    "price":"80000/-"
+  },
+  {
+    "id":24,
+    "img":"bangle 2.webp",
+    "gm":"9gm",
+    "name":"Silver Bangle",
+    "price":"80000/-"
+  },
+  {
+    "id":25,
+    "img":"bangle 3.webp",
+    "gm":"9gm",
+    "name":"Silver Bangle",
+    "price":"80000/-"
+  },
+  {
+    "id":26,
+    "img":"bangle 4.webp",
+    "gm":"9gm",
+    "name":"Silver Bangle",
+    "price":"80000/-"
+  },
+  {
+    "id":27,
+    "img":"bangle 5.webp",
+    "gm":"9gm",
+    "name":"Silver Bangle",
+    "price":"80000/-"
+  },
+  {
+    "id":28,
+    "img":"bangle 6.webp",
+    "gm":"9gm",
+    "name":"Silver Bangle",
+    "price":"80000/-"
+  }
+]

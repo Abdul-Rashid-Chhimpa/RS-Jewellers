@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.welcome{
+    /* border: 0.1px solid black; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../public/bg\ 7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wel-containor{
+/* border: 0.1px solid rgb(252, 29, 29); */
+display: flex;
+height: 500px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+padding: 10px;
+/* backdrop-filter: blur(10px); */
+}
+
+.welcome .wel-containor img{
+    width: 300px;
+    height: 300px;
+    mix-blend-mode: multiply;
+    box-shadow: 1px 0px 0.9px rgba(0, 0, 0, 0.268);
+    border-radius: 50cm;
+    animation: move 3s ease-in-out;
+}
+@keyframes move {
+
+    0%{
+        transform: rotateY(90deg);
+    }50%{
+        transform: rotateY(0deg);
+    }100%{
+         transform: rotateY(-90deg);
+    }
+
+}
+
+
+.welcome .wel-containor button{
+    padding: 9px 20px;
+    cursor: pointer;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: rgb(236, 160, 28);
+    background-color: rgba(112, 128, 144, 0.099);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 0.1px solid rgba(0, 0, 0, 0.107);
+    box-shadow: 1px 0.5px 1px rgba(0, 0, 0, 0.268);
+}
+
+.welcome .wel-containor button:hover {
+    background-color: rgba(236, 160, 28, 0.2);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(236, 160, 28, 0.3);
+}
+
+.welcome .wel-containor button:hover{
+    background-color: rgba(112, 128, 144, 0.186);
+    transition: 0.5s linear;
+}
+
+@media (max-width: 768px) {
+    .wel-containor {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .welcome .wel-containor img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .welcome .wel-containor button {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome .wel-containor img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .welcome .wel-containor button {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+}
