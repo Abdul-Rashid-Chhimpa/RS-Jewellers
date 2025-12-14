@@ -1,52 +1,41 @@
 // Navigation.jsx
 import { useState } from 'react';
-import './CSS/Navbar.css';
 import { useNavigate } from 'react-router-dom';
+import './CSS/Navbar.css';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(prev => !prev);
   };
 
-  const navigateHome=()=>{
-    navigate("/")
-  }
-  const navigateProducts=()=>{
-    navigate("/products");
-  }
-  const navigateAbout=()=>{
-    navigate("/about")
-  }
+  // Navigation handlers with menu close on mobile
+  const handleNavigate = (path) => {
+    navigate(path);
+    setIsOpen(false); // Close mobile menu after clicking a link
+  };
 
-const navigateContact=()=>{
-  navigate("/contact");
-}
   return (
     <>
       <div className="navigation">
-        {/* Logo */}
-        <div className="logo">
-          <img src="OIP.webp" alt="Logo" /> {/* Replace with your logo */}
+        {/* Logo - Make it clickable to go home */}
+        <div className="logo" onClick={() => handleNavigate('/')}>
+          <img src="/OIP.webp" alt="Logo" />
         </div>
 
         {/* Desktop Menu */}
         <div className="nav-links">
-          <a href='home' onClick={navigateHome}>Home</a>
-          <a href='products' onClick={navigateProducts}>Products</a>
-          <a href='contact' onClick={navigateContact}>Contact</a>
-          <a href='about' onClick={navigateAbout}>About</a>
-          {/* <a href="#rings">Rings</a> */}
-          {/* <a href="#earings">Earrings</a> */}
-          {/* <a href="#pendants">Pendants</a> */}
-      
+          <a onClick={() => handleNavigate('/')}>Home</a>
+          <a onClick={() => handleNavigate('/products')}>Products</a>
+          <a onClick={() => handleNavigate('/about')}>About</a>
+          <a onClick={() => handleNavigate('/contact')}>Contact</a>
         </div>
 
         {/* Hamburger Icon */}
-        <div 
-          className={`hamburger ${isOpen ? 'active' : ''}`} 
+        <div
+          className={`hamburger ${isOpen ? 'active' : ''}`}
           onClick={toggleMenu}
         >
           <span></span>
@@ -57,10 +46,10 @@ const navigateContact=()=>{
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
-         <a onClick={navigateHome}>Home</a>
-          <a onClick={navigateProducts}>Products</a>
-            <a href="#contact">Contact</a>
-          <a href="#About">About</a>
+        <a onClick={() => handleNavigate('/')}>Home</a>
+        <a onClick={() => handleNavigate('/products')}>Products</a>
+        <a onClick={() => handleNavigate('/about')}>About</a>
+        <a onClick={() => handleNavigate('/contact')}>Contact</a>
       </div>
     </>
   );
